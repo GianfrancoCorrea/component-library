@@ -3,9 +3,9 @@ import Container from '../index';
 
 export default {
     title      : 'Container',
-    parameters : {
-        component         : Container,
-        componentSubtitle : 'A Container limits content to a maximum width.',
+    component         : Container,
+        parameters : {
+componentSubtitle : 'A Container limits content to a maximum width.',
     },
 };
 
@@ -46,6 +46,4 @@ export const Compact = () => (
         </Container>
     </div>
 );
-Compact.story = {
-    parameters: { docs: { storyDescription: 'A Container can have an smaller width.' } },
-};
+Compact.parameters =  { docs: { description: { story:  'A Container can have an smaller width.' } } };

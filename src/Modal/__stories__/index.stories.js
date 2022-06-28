@@ -4,9 +4,9 @@ import Button from 'src/Button';
 
 export default {
     title      : 'Modal',
-    parameters : {
-        component         : Modal,
-        componentSubtitle : 'A Modal displays content that temporarily blocks interactions with the main view of a site.',
+    component         : Modal,
+        parameters : {
+componentSubtitle : 'A Modal displays content that temporarily blocks interactions with the main view of a site.',
     },
 };
 
@@ -34,9 +34,7 @@ export const WithoutTitle = () => (
         />
     </div>
 );
-WithoutTitle.story = {
-    parameters: { docs: { storyDescription: 'The title prop is not required, you can build a Modal without it.' } },
-};
+WithoutTitle.parameters =  { docs: { description: { story:  'The title prop is not required, you can build a Modal without it.' } } };
 
 export const WithFooter = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -48,9 +46,7 @@ export const WithFooter = () => (
         />
     </div>
 );
-WithFooter.story = {
-    parameters: { docs: { storyDescription: 'You can display a footer with any element you want inside it.' } },
-};
+WithFooter.parameters =  { docs: { description: { story:  'You can display a footer with any element you want inside it.' } } };
 
 export const Sizes = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -85,9 +81,7 @@ export const Sizes = () => (
         />
     </div>
 );
-Sizes.story = {
-    parameters: { docs: { storyDescription: 'The Modal could be display in 4 different sizes (large, normal, small or tiny).' } },
-};
+Sizes.parameters =  { docs: { description: { story:  'The Modal could be display in 4 different sizes (large, normal, small or tiny).' } } };
 
 export const WithoutCloseIcon = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -99,9 +93,7 @@ export const WithoutCloseIcon = () => (
         />
     </div>
 );
-WithoutCloseIcon.story = {
-    parameters: { docs: { storyDescription: 'You can hide the close icon on the header. The Modal could be closed anyways pressing the Esc key or clicking the overlay.' } },
-};
+WithoutCloseIcon.parameters =  { docs: { description: { story:  'You can hide the close icon on the header. The Modal could be closed anyways pressing the Esc key or clicking the overlay.' } } };
 
 export const AvoidExternalClose = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -118,6 +110,4 @@ export const AvoidExternalClose = () => (
         />
     </div>
 );
-AvoidExternalClose.story = {
-    parameters: { docs: { storyDescription: 'You can remove the option to close the modal troughth the Esc key, clicking on close icon or overlay.' } },
-};
+AvoidExternalClose.parameters =  { docs: { description: { story:  'You can remove the option to close the modal troughth the Esc key, clicking on close icon or overlay.' } } };

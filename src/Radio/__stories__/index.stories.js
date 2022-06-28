@@ -3,9 +3,9 @@ import Radio from '../index';
 
 export default {
     title      : 'Radio',
-    parameters : {
-        component         : Radio,
-        componentSubtitle : 'A Radio allows a user to select one value from a set of options.',
+    component         : Radio,
+        parameters : {
+componentSubtitle : 'A Radio allows a user to select one value from a set of options.',
     },
 };
 
@@ -63,9 +63,7 @@ export const Required = () => (
         />
     </div>
 );
-Required.story = {
-    parameters: { docs: { storyDescription: 'A Radio can be required.' } },
-};
+Required.parameters =  { docs: { description: { story:  'A Radio can be required.' } } };
 
 export const ErrorStatus = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -96,9 +94,7 @@ export const ErrorStatus = () => (
         />
     </div>
 );
-ErrorStatus.story = {
-    parameters: { docs: { storyDescription: 'A Radio can have an error status.' } },
-};
+ErrorStatus.parameters =  { docs: { description: { story:  'A Radio can have an error status.' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -127,6 +123,4 @@ export const Disabled = () => (
         />
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'A Radio can have an error status.' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'A Radio can have an error status.' } } };

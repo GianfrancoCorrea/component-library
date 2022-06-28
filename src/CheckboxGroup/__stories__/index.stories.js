@@ -3,9 +3,9 @@ import CheckboxGroup from '../index';
 
 export default {
     title      : 'CheckboxGroup',
-    parameters : {
-        component         : CheckboxGroup,
-        componentSubtitle : 'A CheckboxGroup is a group of Checkboxes.',
+    component         : CheckboxGroup,
+        parameters : {
+componentSubtitle : 'A CheckboxGroup is a group of Checkboxes.',
     },
 };
 
@@ -41,9 +41,7 @@ export const Required = () => (
         />
     </div>
 );
-Required.story = {
-    parameters: { docs: { storyDescription: 'A CheckboxGruop can be required.' } },
-};
+Required.parameters =  { docs: { description: { story:  'A CheckboxGruop can be required.' } } };
 
 export const ErrorStatus = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -63,9 +61,7 @@ export const ErrorStatus = () => (
         />
     </div>
 );
-ErrorStatus.story = {
-    parameters: { docs: { storyDescription: 'A CheckboxGruop can be required.' } },
-};
+ErrorStatus.parameters =  { docs: { description: { story:  'A CheckboxGruop can be required.' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -83,6 +79,4 @@ export const Disabled = () => (
         />
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'A CheckboxGruop can be disabled.' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'A CheckboxGruop can be disabled.' } } };

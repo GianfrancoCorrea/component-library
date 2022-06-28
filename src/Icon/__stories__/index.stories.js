@@ -3,9 +3,9 @@ import Icon from '../index';
 
 export default {
     title      : 'Icon',
-    parameters : {
-        component         : Icon,
-        componentSubtitle : 'An Icon is a glyph used to represent something else.',
+    component         : Icon,
+        parameters : {
+componentSubtitle : 'An Icon is a glyph used to represent something else.',
     },
 };
 
@@ -30,13 +30,9 @@ export const Size = () => (
         <Icon name="user" size="extra" />
     </div>
 );
-Size.story = {
-    parameters: { docs: { storyDescription: 'An Icon can be rendered in different sizes' } },
-};
+Size.parameters =  { docs: { description: { story:  'An Icon can be rendered in different sizes' } } };
 
 export const Disabled = () => (
     <Icon name="user" disabled />
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'An Icon can have a disabled state' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'An Icon can have a disabled state' } } };

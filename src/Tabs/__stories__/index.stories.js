@@ -3,9 +3,9 @@ import Tabs from '../index';
 
 export default {
     title      : 'Tabs',
-    parameters : {
-        component         : Tabs,
-        componentSubtitle : 'Tabs shows a set of sections in which the selected one is visible.',
+    component         : Tabs,
+        parameters : {
+componentSubtitle : 'Tabs shows a set of sections in which the selected one is visible.',
     },
 };
 

@@ -3,9 +3,9 @@ import Label from '../index';
 
 export default {
     title      : 'Label',
-    parameters : {
-        component         : Label,
-        componentSubtitle : 'A Label displays content classification.',
+    component         : Label,
+        parameters : {
+componentSubtitle : 'A Label displays content classification.',
     },
 };
 
@@ -35,9 +35,7 @@ export const Colors = () => (
         {' '}
     </div>
 );
-Colors.story = {
-    parameters: { docs: { storyDescription: 'A Label can be rendered in different colors.' } },
-};
+Colors.parameters =  { docs: { description: { story:  'A Label can be rendered in different colors.' } } };
 
 export const Inverted = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -59,9 +57,7 @@ export const Inverted = () => (
         {' '}
     </div>
 );
-Inverted.story = {
-    parameters: { docs: { storyDescription: 'A Label can be rendered with a light background and color text.' } },
-};
+Inverted.parameters =  { docs: { description: { story:  'A Label can be rendered with a light background and color text.' } } };
 
 export const Ribbon = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -70,9 +66,7 @@ export const Ribbon = () => (
         <Label ribbonRight color="red" content="10% OFF!" />
     </div>
 );
-Ribbon.story = {
-    parameters: { docs: { storyDescription: 'A Label can be rendered as a ribbon' } },
-};
+Ribbon.parameters =  { docs: { description: { story:  'A Label can be rendered as a ribbon' } } };
 
 export const Size = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -81,9 +75,7 @@ export const Size = () => (
         <Label content="Label size small" size="small" />
     </div>
 );
-Size.story = {
-    parameters: { docs: { storyDescription: 'A Label can be rendered in 2 sizes' } },
-};
+Size.parameters =  { docs: { description: { story:  'A Label can be rendered in 2 sizes' } } };
 
 export const WithIcon = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -93,6 +85,4 @@ export const WithIcon = () => (
         />
     </div>
 );
-WithIcon.story = {
-    parameters: { docs: { storyDescription: 'A Label can have an icon' } },
-};
+WithIcon.parameters =  { docs: { description: { story:  'A Label can have an icon' } } };

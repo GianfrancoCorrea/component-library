@@ -3,9 +3,9 @@ import DescriptionList from '../index';
 
 export default {
     title      : 'DescriptionList',
-    parameters : {
-        component         : DescriptionList,
-        componentSubtitle : 'A DescriptionList groups terms and descriptions',
+    component         : DescriptionList,
+        parameters : {
+componentSubtitle : 'A DescriptionList groups terms and descriptions',
     },
 };
 

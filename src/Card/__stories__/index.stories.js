@@ -3,9 +3,9 @@ import Card from '../index';
 
 export default {
     title      : 'Card',
-    parameters : {
-        component         : Card,
-        componentSubtitle : 'A Card is used to create a grouping of related content.',
+    component         : Card,
+        parameters : {
+componentSubtitle : 'A Card is used to create a grouping of related content.',
     },
 };
 
@@ -26,9 +26,7 @@ export const Transparent = () => (
         />
     </div>
 );
-Transparent.story = {
-    parameters: { docs: { storyDescription: 'A Card can have a tranparent background.' } },
-};
+Transparent.parameters =  { docs: { description: { story:  'A Card can have a tranparent background.' } } };
 
 export const TitleAction = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -39,9 +37,7 @@ export const TitleAction = () => (
         />
     </div>
 );
-TitleAction.story = {
-    parameters: { docs: { storyDescription: 'A Card can have an element at title side.' } },
-};
+TitleAction.parameters =  { docs: { description: { story:  'A Card can have an element at title side.' } } };
 
 export const VariablePadding = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -60,6 +56,4 @@ export const VariablePadding = () => (
         />
     </div>
 );
-VariablePadding.story = {
-    parameters: { docs: { storyDescription: 'A Card can have different padding sizes.' } },
-};
+VariablePadding.parameters =  { docs: { description: { story:  'A Card can have different padding sizes.' } } };

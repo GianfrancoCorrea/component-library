@@ -4,9 +4,9 @@ import Button from '../index';
 
 export default {
     title      : 'Button',
-    parameters : {
-        component         : Button,
-        componentSubtitle : 'A Button indicates a possible user action.',
+    component         : Button,
+        parameters : {
+componentSubtitle : 'A Button indicates a possible user action.',
     },
 };
 
@@ -34,9 +34,7 @@ export const Emphasis = () => (
         />
     </div>
 );
-Emphasis.story = {
-    parameters: { docs: { storyDescription: 'A Button can be formatted to show different levels of emphasis.' } },
-};
+Emphasis.parameters =  { docs: { description: { story:  'A Button can be formatted to show different levels of emphasis.' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -64,9 +62,7 @@ export const Disabled = () => (
         />
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'A Button can have a disabled state.' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'A Button can have a disabled state.' } } };
 
 export const OnClickFunction = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -76,9 +72,7 @@ export const OnClickFunction = () => (
         />
     </div>
 );
-OnClickFunction.story = {
-    parameters: { docs: { storyDescription: 'A Button can trigger an event.' } },
-};
+OnClickFunction.parameters =  { docs: { description: { story:  'A Button can trigger an event.' } } };
 
 export const Type = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -98,9 +92,7 @@ export const Type = () => (
         />
     </div>
 );
-Type.story = {
-    parameters: { docs: { storyDescription: 'A Button can be render as type button, submit or reset.' } },
-};
+Type.parameters =  { docs: { description: { story:  'A Button can be render as type button, submit or reset.' } } };
 
 export const Sizes = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -120,9 +112,7 @@ export const Sizes = () => (
         />
     </div>
 );
-Type.story = {
-    parameters: { docs: { storyDescription: 'A Button can be render in 3 different sizes (small, normal and large).' } },
-};
+Type.parameters =  { docs: { description: { story:  'A Button can be render in 3 different sizes (small, normal and large).' } } };
 
 export const Fluid = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -132,9 +122,7 @@ export const Fluid = () => (
         />
     </div>
 );
-Fluid.story = {
-    parameters: { docs: { storyDescription: 'A Button can takes the full width of its parent.' } },
-};
+Fluid.parameters =  { docs: { description: { story:  'A Button can takes the full width of its parent.' } } };
 
 export const Loading = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -144,6 +132,4 @@ export const Loading = () => (
         />
     </div>
 );
-Loading.story = {
-    parameters: { docs: { storyDescription: 'A Button can have a loadig state.' } },
-};
+Loading.parameters =  { docs: { description: { story:  'A Button can have a loadig state.' } } };

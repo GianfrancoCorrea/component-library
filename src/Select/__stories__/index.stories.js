@@ -3,9 +3,9 @@ import Select from '../index';
 
 export default {
     title      : 'Select',
-    parameters : {
-        component         : Select,
-        componentSubtitle : 'A Select allows a user to select a value from a series of options.',
+    component         : Select,
+        parameters : {
+componentSubtitle : 'A Select allows a user to select a value from a series of options.',
     },
 };
 
@@ -87,9 +87,7 @@ export const UXHelpers = () => (
         </div>
     </div>
 );
-UXHelpers.story = {
-    parameters: { docs: { storyDescription: 'A Select can show relevant information for the user in a form of label hint or extra content.' } },
-};
+UXHelpers.parameters =  { docs: { description: { story:  'A Select can show relevant information for the user in a form of label hint or extra content.' } } };
 
 export const Required = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -123,9 +121,7 @@ export const Required = () => (
         </div>
     </div>
 );
-Required.story = {
-    parameters: { docs: { storyDescription: 'A Select can be required.' } },
-};
+Required.parameters =  { docs: { description: { story:  'A Select can be required.' } } };
 
 export const ErrorStatus = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -161,9 +157,7 @@ export const ErrorStatus = () => (
         </div>
     </div>
 );
-ErrorStatus.story = {
-    parameters: { docs: { storyDescription: 'A Select can have an error status.' } },
-};
+ErrorStatus.parameters =  { docs: { description: { story:  'A Select can have an error status.' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -189,6 +183,4 @@ export const Disabled = () => (
         </div>
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'A Select can have a disabled status.' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'A Select can have a disabled status.' } } };

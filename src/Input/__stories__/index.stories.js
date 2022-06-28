@@ -3,9 +3,9 @@ import Input from '../index';
 
 export default {
     title      : 'Input',
-    parameters : {
-        component         : Input,
-        componentSubtitle : 'An Input is a field used to get an answer from a user.',
+    component         : Input,
+        parameters : {
+componentSubtitle : 'An Input is a field used to get an answer from a user.',
     },
 };
 
@@ -38,9 +38,7 @@ export const UXHelpers = () => (
         </div>
     </div>
 );
-UXHelpers.story = {
-    parameters: { docs: { storyDescription: 'An Input can show relevant information for the user in a form of label hint, extra content or placeholder' } },
-};
+UXHelpers.parameters =  { docs: { description: { story:  'An Input can show relevant information for the user in a form of label hint, extra content or placeholder' } } };
 
 export const Required = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -52,9 +50,7 @@ export const Required = () => (
         </div>
     </div>
 );
-Required.story = {
-    parameters: { docs: { storyDescription: 'An Input can be required' } },
-};
+Required.parameters =  { docs: { description: { story:  'An Input can be required' } } };
 
 export const ErrorStatus = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -70,9 +66,7 @@ export const ErrorStatus = () => (
         </div>
     </div>
 );
-ErrorStatus.story = {
-    parameters: { docs: { storyDescription: 'An Input can have an error status' } },
-};
+ErrorStatus.parameters =  { docs: { description: { story:  'An Input can have an error status' } } };
 
 export const WithIcon = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -91,9 +85,7 @@ export const WithIcon = () => (
         </div>
     </div>
 );
-WithIcon.story = {
-    parameters: { docs: { storyDescription: 'An Input can show an icon inside it' } },
-};
+WithIcon.parameters =  { docs: { description: { story:  'An Input can show an icon inside it' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -105,7 +97,5 @@ export const Disabled = () => (
         </div>
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'An Input can have a disabled status' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'An Input can have a disabled status' } } };
 

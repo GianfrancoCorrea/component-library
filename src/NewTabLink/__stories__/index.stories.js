@@ -4,9 +4,9 @@ import Button from 'src/Button';
 
 export default {
     title      : 'NewTabLink',
-    parameters : {
-        component         : NewTabLink,
-        componentSubtitle : 'A NewTabLink opens a link in a new tab when is clicked.',
+    component         : NewTabLink,
+        parameters : {
+componentSubtitle : 'A NewTabLink opens a link in a new tab when is clicked.',
     },
 };
 

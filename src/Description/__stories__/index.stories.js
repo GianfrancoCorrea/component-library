@@ -3,9 +3,9 @@ import Description from '../index';
 
 export default {
     title      : 'Description',
-    parameters : {
-        component         : Description,
-        componentSubtitle : 'A Description is a block of text',
+    component         : Description,
+        parameters : {
+componentSubtitle : 'A Description is a block of text',
     },
 };
 
@@ -126,9 +126,7 @@ export const SetLinesLimit = () => (
         </Description>
     </div>
 );
-SetLinesLimit.story = {
-    parameters: { docs: { storyDescription: 'A Description can crop the text in different lines amount.' } },
-};
+SetLinesLimit.parameters =  { docs: { description: { story:  'A Description can crop the text in different lines amount.' } } };
 
 export const NotCroppedDescription = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -176,6 +174,4 @@ export const NotCroppedDescription = () => (
         </Description>
     </div>
 );
-NotCroppedDescription.story = {
-    parameters: { docs: { storyDescription: 'A Description can have the cropping disabled.' } },
-};
+NotCroppedDescription.parameters =  { docs: { description: { story:  'A Description can have the cropping disabled.' } } };

@@ -4,9 +4,9 @@ import Button from 'src/Button';
 
 export default {
     title      : 'FeedbackMessage',
-    parameters : {
-        component         : FeedbackMessage,
-        componentSubtitle : 'A FeedbackMessage displays information that explains nearby content.',
+    component         : FeedbackMessage,
+        parameters : {
+componentSubtitle : 'A FeedbackMessage displays information that explains nearby content.',
     },
 };
 
@@ -49,9 +49,7 @@ export const Types = () => (
         />
     </div>
 );
-Types.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can have different types to show different kind of information (info, danger/error, warning and success).' } },
-};
+Types.parameters =  { docs: { description: { story:  'FeedbackMessages can have different types to show different kind of information (info, danger/error, warning and success).' } } };
 
 export const ExtraContent = () => (
     <div style={{ padding: '40px' }}>
@@ -62,9 +60,7 @@ export const ExtraContent = () => (
         />
     </div>
 );
-ExtraContent.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can have en extra block of info besides the message.' } },
-};
+ExtraContent.parameters =  { docs: { description: { story:  'FeedbackMessages can have en extra block of info besides the message.' } } };
 
 export const Alignment = () => (
     <div style={{ padding: '40px' }}>
@@ -92,9 +88,7 @@ export const Alignment = () => (
         />
     </div>
 );
-Alignment.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can align its elements at the left, center or right.' } },
-};
+Alignment.parameters =  { docs: { description: { story:  'FeedbackMessages can align its elements at the left, center or right.' } } };
 
 export const WithIcon = () => (
     <div style={{ padding: '40px' }}>
@@ -105,9 +99,7 @@ export const WithIcon = () => (
         />
     </div>
 );
-WithIcon.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can have an icon.' } },
-};
+WithIcon.parameters =  { docs: { description: { story:  'FeedbackMessages can have an icon.' } } };
 
 export const CloseIcon = () => (
     <div style={{ padding: '40px' }}>
@@ -118,9 +110,7 @@ export const CloseIcon = () => (
         />
     </div>
 );
-CloseIcon.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can have a close icon.' } },
-};
+CloseIcon.parameters =  { docs: { description: { story:  'FeedbackMessages can have a close icon.' } } };
 
 export const Compact = () => (
     <div style={{ padding: '40px' }}>
@@ -131,9 +121,7 @@ export const Compact = () => (
         />
     </div>
 );
-Compact.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can be smaller.' } },
-};
+Compact.parameters =  { docs: { description: { story:  'FeedbackMessages can be smaller.' } } };
 
 export const WithColumns = () => (
     <div style={{ padding: '40px' }}>
@@ -145,9 +133,7 @@ export const WithColumns = () => (
         />
     </div>
 );
-WithColumns.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can show its elements in columns.' } },
-};
+WithColumns.parameters =  { docs: { description: { story:  'FeedbackMessages can show its elements in columns.' } } };
 
 export const InlineBlock = () => (
     <div style={{ padding: '40px' }}>
@@ -158,6 +144,4 @@ export const InlineBlock = () => (
         />
     </div>
 );
-InlineBlock.story = {
-    parameters: { docs: { storyDescription: 'FeedbackMessages can take only its content width.' } },
-};
+InlineBlock.parameters =  { docs: { description: { story:  'FeedbackMessages can take only its content width.' } } };

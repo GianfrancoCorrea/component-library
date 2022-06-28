@@ -3,9 +3,9 @@ import Divider from '../index';
 
 export default {
     title      : 'Divider',
-    parameters : {
-        component         : Divider,
-        componentSubtitle : 'A Divider visually segments content into groups.',
+    component         : Divider,
+        parameters : {
+componentSubtitle : 'A Divider visually segments content into groups.',
     },
 };
 
@@ -38,6 +38,4 @@ export const LargerMargins = () => (
         </div>
     </div>
 );
-LargerMargins.story = {
-    parameters: { docs: { storyDescription: 'A Dvider can have larger margins than default ones.' } },
-};
+LargerMargins.parameters =  { docs: { description: { story:  'A Dvider can have larger margins than default ones.' } } };

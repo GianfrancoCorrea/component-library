@@ -51,19 +51,22 @@ addons.setConfig({
     /**
      * theme storybook, see link below
      */
-    theme:  themes.normal,
+    theme:  themes.dark,
+    docs: {
+        theme: themes.dark,
+    },
 
     /**
      * id to select an addon panel
      * @type {String}
      */
-    selectedPanel: undefined
+    selectedPanel: 'storybook/addon-docs/panel',
   });
 
 // docs theming
 addParameters({
-    options: {
-        theme: themes.normal,
+    docs: {
+        theme: themes.dark,
     },
     /** 
     * custom for storybook-dark-mode

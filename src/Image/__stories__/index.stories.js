@@ -4,9 +4,9 @@ import Image from '../index';
 
 export default {
     title      : 'Image',
-    parameters : {
-        component         : Image,
-        componentSubtitle : 'A Image shows an image and gallery of them.',
+    component         : Image,
+        parameters : {
+componentSubtitle : 'A Image shows an image and gallery of them.',
     },
 };
 
@@ -43,9 +43,7 @@ export const ImagesGallery = () => (
         />
     </div>
 );
-ImagesGallery.story = {
-    parameters: { docs: { storyDescription: 'An Image can open an image gallery on click.' } },
-};
+ImagesGallery.parameters =  { docs: { description: { story:  'An Image can open an image gallery on click.' } } };
 
 export const FunctionOnClick = () => (
     <div style={{ padding: '40px' }}>
@@ -56,6 +54,4 @@ export const FunctionOnClick = () => (
         />
     </div>
 );
-FunctionOnClick.story = {
-    parameters: { docs: { storyDescription: 'An Image can trigger an action on click.' } },
-};
+FunctionOnClick.parameters =  { docs: { description: { story:  'An Image can trigger an action on click.' } } };

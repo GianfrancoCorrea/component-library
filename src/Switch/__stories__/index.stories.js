@@ -3,9 +3,9 @@ import Switch from '../index';
 
 export default {
     title      : 'Switch',
-    parameters : {
-        component         : Switch,
-        componentSubtitle : 'A Switch allows user to select between two options.',
+    component         : Switch,
+        parameters : {
+componentSubtitle : 'A Switch allows user to select between two options.',
     },
 };
 
@@ -23,9 +23,7 @@ export const Labels = () => (
         />
     </div>
 );
-Labels.story = {
-    parameters: { docs: { storyDescription: 'A Switch can have custom labels.' } },
-};
+Labels.parameters =  { docs: { description: { story:  'A Switch can have custom labels.' } } };
 
 export const DefaultState = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -42,9 +40,7 @@ export const DefaultState = () => (
         />
     </div>
 );
-DefaultState.story = {
-    parameters: { docs: { storyDescription: 'A Switch can have active state by default.' } },
-};
+DefaultState.parameters =  { docs: { description: { story:  'A Switch can have active state by default.' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -55,15 +51,11 @@ export const Disabled = () => (
         />
     </div>
 );
-Disabled.story = {
-    parameters: { docs: { storyDescription: 'A Switch can be disabled.' } },
-};
+Disabled.parameters =  { docs: { description: { story:  'A Switch can be disabled.' } } };
 
 export const WithoutLabels = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
         <Switch withoutLabels />
     </div>
 );
-WithoutLabels.story = {
-    parameters: { docs: { storyDescription: 'A Switch can be rendered without labels.' } },
-};
+WithoutLabels.parameters =  { docs: { description: { story:  'A Switch can be rendered without labels.' } } };

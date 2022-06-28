@@ -3,9 +3,9 @@ import Title from '../index';
 
 export default {
     title      : 'Title',
-    parameters : {
-        component         : Title,
-        componentSubtitle : 'A Title displays a text more important than the normal one.',
+    component         : Title,
+        parameters : {
+componentSubtitle : 'A Title displays a text more important than the normal one.',
     },
 };
 
@@ -50,9 +50,7 @@ export const Sizes = () => (
         />
     </div>
 );
-Sizes.story = {
-    parameters: { docs: { storyDescription: 'You can display Title in 7 different sizes (small, normal, medium, large, xlarge, huge and extra)' } },
-};
+Sizes.parameters =  { docs: { description: { story:  'You can display Title in 7 different sizes (small, normal, medium, large, xlarge, huge and extra)' } } };
 
 export const HeadingTags = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -82,6 +80,4 @@ export const HeadingTags = () => (
         />
     </div>
 );
-HeadingTags.story = {
-    parameters: { docs: { storyDescription: 'You can render Title as h1/h6 tags' } },
-};
+HeadingTags.parameters =  { docs: { description: { story:  'You can render Title as h1/h6 tags' } } };
