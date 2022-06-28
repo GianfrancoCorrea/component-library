@@ -1,34 +1,68 @@
 {
-  "extends": "arzion",
+  "extends": "airbnb",
   "parser": "babel-eslint",
   "plugins": [
       "react-hooks"
   ],
   "rules": {
-      "indent": ["warn", 4, { "SwitchCase": 1 }],
-      "padded-blocks": ["error", { "switches": "never", "blocks": "never", "classes": "always" }],
-      "key-spacing": ["error", {
-          "align": {
-              "beforeColon": true,
-              "afterColon": true,
-              "on": "colon"
-          }
-      }],
-      "linebreak-style": 0,
-      "object-curly-newline": ["error",{ "multiline": true, "consistent": true }],
-      "react/jsx-indent-props": ["warn", 4],
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "jsx-a11y/label-has-associated-control": "off",
+    "indent": ["warn", 4, { "SwitchCase": 1 }],
+    "padded-blocks": ["error", { "switches": "never", "blocks": "never", "classes": "always" }],
+    "key-spacing": ["error", {
+        "align": {
+            "beforeColon": true,
+            "afterColon": true,
+            "on": "colon"
+        }
+    }],
+    "linebreak-style": 0,
+    "no-undef": 0,
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-indent-props": ["warn", 4],
+    "react/jsx-indent": ["warn", 4],
+    "react/no-danger": 0,
+    "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
+    "max-len": ["warn", {
+            "code": 155,
+            "ignoreComments": true,
+            "ignoreTrailingComments": true,
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+        }
+    ],
+    "curly": ["error", "all"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "import/named": 0,
+    "import/order": ["error", { "groups": [], "newlines-between": "never" }],
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": [ "**/*.test.js", "build/*.js" ]}],
+    "no-case-declarations": 0,
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": 0,
+    "object-curly-newline": ["error",{ "multiline": true, "consistent": true }],
+    "arrow-parens": 0,
+
+},
+
+    //   
+     /*  
       "jsx-a11y/no-noninteractive-element-interactions": "off",
-      "react/jsx-props-no-spreading": 0,
       "react/jsx-curly-brace-presence": 0,
       "jsx-a11y/control-has-associated-label": 0,
-      "arrow-parens": 0,
       "import/no-cycle": 0,
       "react/prop-types": [2, { "ignore": ["qaData", "trackingData", "marketing"] }],
-      "camelcase": [0, {"allow": ["^UNSAFE_"]}]
-      },
+      "camelcase": [0, {"allow": ["^UNSAFE_"]}], */
+        // "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
       "settings": {
         "import/resolver": {
             "babel-module": {}

@@ -58,7 +58,7 @@
     "enzyme-adapter-react-16": "1.15.2",
     "enzyme-to-json": "3.4.4",
     "eslint": "7.32.0",
-    "eslint-config-airbnb": "19.0.1",
+    "eslint-config-airbnb": "19.0.4",
     "eslint-config-arzion": "1.0.4",
     "eslint-import-resolver-babel-module": "5.1.2",
     "eslint-loader": "4.0.2",
