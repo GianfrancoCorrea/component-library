@@ -59,7 +59,6 @@
     "enzyme-to-json": "3.4.4",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-config-arzion": "1.0.4",
     "eslint-import-resolver-babel-module": "5.1.2",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.26.0",

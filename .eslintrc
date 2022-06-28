@@ -51,6 +51,7 @@
     "react/jsx-props-no-spreading": 0,
     "object-curly-newline": ["error",{ "multiline": true, "consistent": true }],
     "arrow-parens": 0,
+    "react/function-component-definition" : 0
 
 },
 

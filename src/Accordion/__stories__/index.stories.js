@@ -3,9 +3,10 @@ import Accordion from '../index';
 
 export default {
     title      : 'Accordion',
-    component         : Accordion,
-        parameters : {
-componentSubtitle : 'An Accordion allows users to toggle the display of sections of content.',
+    component  : Accordion,
+    viewMode   : 'docs',
+    parameters : {
+        componentSubtitle: 'An Accordion allows users to toggle the display of sections of content.',
     },
 };
 
@@ -30,7 +31,7 @@ export const Open = () => (
         />
     </div>
 );
-Open.parameters =  { docs: { description: { story:  'The Accordion can be opened by default' } } };
+Open.parameters = { docs: { description: { story: 'The Accordion can be opened by default' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -41,7 +42,7 @@ export const Disabled = () => (
         />
     </div>
 );
-Disabled.parameters =  { docs: { description: { story:  'The Accordion can have a disabled state' } } };
+Disabled.parameters = { docs: { description: { story: 'The Accordion can have a disabled state' } } };
 
 export const Card = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -53,4 +54,4 @@ export const Card = () => (
         />
     </div>
 );
-Card.parameters =  { docs: { description: { story:  'The Accordion can look like a Card' } } };
+Card.parameters = { docs: { description: { story: 'The Accordion can look like a Card' } } };

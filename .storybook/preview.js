@@ -1,4 +1,4 @@
-import { addParameters, addDecorator } from '@storybook/react';
+import { addDecorator } from '@storybook/react';
 import { addons } from '@storybook/addons';
 import { themes } from '@storybook/theming';
 import { withConsole } from '@storybook/addon-console';
@@ -60,22 +60,24 @@ addons.setConfig({
      * id to select an addon panel
      * @type {String}
      */
-    selectedPanel: 'storybook/addon-docs/panel',
+    selectedPanel: 'storybook/docs/panel',
+
   });
 
-// docs theming
-addParameters({
+
+// console output on "Actions" tab
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+
+export const parameters = {
     docs: {
         theme: themes.dark,
     },
     /** 
-    * custom for storybook-dark-mode
-    */
+     * custom for storybook-dark-mode
+     */
     darkMode: {
         dark: themes.dark,
         light: themes.normal
-    }
-});
-
-// console output on "Actions" tab
-addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+    },
+    viewMode: 'docs',
+}
