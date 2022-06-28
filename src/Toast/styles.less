@@ -1,0 +1,76 @@
+@toast-margin: @space-normal;
+
+.toast-wrapper {
+    position: fixed;
+    z-index: 9999;
+
+    // Placement
+
+    &.x-position-left {
+        left: @toast-margin;
+    }
+
+    &.x-position-center {        
+        height: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        &.y-position-top {
+            align-items: flex-start;
+        }
+
+        &.y-position-bottom {
+            align-items: flex-end;
+        }
+
+    }
+
+    &.x-position-right {
+        right: @toast-margin;
+    }
+
+    &.y-position-top {
+        top: @toast-margin;
+    }
+
+    &.y-position-bottom {
+        bottom: @toast-margin;
+    }
+}
+
+.toast {    
+    padding: @space-small @space-normal;
+    max-width: @container-max-width;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2), 0 8px 20px rgba(0, 0, 0, .4);
+    border-radius: @base-border-radius;
+
+    // Types
+
+    &.toast-neutral {
+        background: #ffffff;
+    }
+
+    &.toast-negative {
+        background: @color-text-main;
+        color: @color-text-negative;
+    }
+
+    &.toast-danger,
+    &.toast-error {
+        background: @color-red;
+        color: @color-text-negative;
+    }
+
+    &.toast-warning {
+        background: @color-yellow;
+        color: @color-text-negative;
+    }
+
+    &.toast-success {
+        background: @color-green;
+        color: @color-text-negative;
+    }
+
+}

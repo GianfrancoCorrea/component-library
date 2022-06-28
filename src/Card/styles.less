@@ -1,0 +1,35 @@
+@card-padding: @space-normal;
+
+.card {
+    padding: @card-padding;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: @base-border-radius;
+
+    &.without-padding {
+        padding: 0;
+    }
+
+    &.with-large-padding {
+        padding: @card-padding * 2;
+    }
+
+    &:not(.transparent) {
+        background: @card-background;
+        box-shadow: @card-shadow;
+    }
+
+}
+
+/* Card header */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: @card-padding * .75;
+}
+
+.card-title-action {
+    margin-left: @space-small;
+}

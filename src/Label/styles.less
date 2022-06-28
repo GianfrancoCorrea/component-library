@@ -1,0 +1,488 @@
+.label {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;  
+    font-size: @font-size-small;  
+
+    /* Size */
+
+    &.label-size-small {
+
+        .label-content {
+            height: 1.5rem;
+            line-height: 1.5rem; 
+        }
+
+    }
+
+    &.label-size-normal {
+
+        .label-content {              
+            height: 2rem;
+            line-height: 2rem;          
+        }
+        
+    }
+
+    /* Color */ 
+
+    &.label-color-red {
+
+        .label-content {
+            background: @color-red;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-red-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-red-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-red;
+
+            .label-content {
+                background: @color-red-lightest;
+                border-color: @color-red-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-red-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-red-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-orange {
+
+        .label-content {
+            background: @color-orange;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-orange-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-orange-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-orange;
+
+            .label-content {
+                background: @color-orange-lightest;
+                border-color: @color-orange-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-orange-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-orange-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-yellow {
+
+        .label-content {
+            background: @color-yellow;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-yellow-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-yellow-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-yellow;
+
+            .label-content {
+                background: @color-yellow-lightest;
+                border-color: @color-yellow-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-yellow-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-yellow-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-green {
+
+        .label-content {
+            background: @color-green;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-green-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-green-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-green;
+
+            .label-content {
+                background: @color-green-lightest;
+                border-color: @color-green-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-green-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-green-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-blue {
+
+        .label-content {
+            background: @color-blue;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-blue-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-blue-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-blue;
+
+            .label-content {
+                background: @color-blue-lightest;
+                border-color: @color-blue-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-blue-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-blue-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-teal {
+
+        .label-content {
+            background: @color-teal;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-teal-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-teal-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-teal;
+
+            .label-content {
+                background: @color-teal-lightest;
+                border-color: @color-teal-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-teal-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-teal-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }
+
+    &.label-color-purple {
+
+        .label-content {
+            background: @color-purple;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-purple-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-purple-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-purple;
+
+            .label-content {
+                background: @color-purple-lightest;
+                border-color: @color-purple-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-purple-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-purple-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    }   
+    
+    &.label-color-pink {
+
+        .label-content {
+            background: @color-pink;
+        }
+
+        &.label-has-ribbon-left {
+
+            .label-ribbon {
+                border-color: transparent @color-pink-darker transparent transparent;
+            }
+        
+        }
+        
+        &.label-has-ribbon-right {
+        
+            .label-ribbon {
+                border-color: @color-pink-darker transparent transparent transparent;
+            }
+        
+        }
+
+        &.label-inverted {
+            color: @color-pink;
+
+            .label-content {
+                background: @color-pink-lightest;
+                border-color: @color-pink-lighter;
+            }
+    
+            &.label-has-ribbon-left {
+
+                .label-ribbon {
+                    border-color: transparent @color-pink-lighter transparent transparent;
+                }
+            
+            }
+            
+            &.label-has-ribbon-right {
+            
+                .label-ribbon {
+                    border-color: @color-pink-lighter transparent transparent transparent;
+                }
+            
+            }
+
+        }
+
+    } 
+
+}
+
+.label-content {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: @base-border-radius;
+    padding: 0 @space-small;
+
+    .icon {
+        margin-right: @space-small;
+    }
+
+}
+
+/* Ribbon */
+
+@label-ribbon-size: @font-size-normal;
+
+.label-has-ribbon {
+    z-index: 1;
+
+    .label-ribbon {
+        position: absolute;
+        top: calc(100% + 1px);
+        width: 0;
+        height: 0;
+        content: "";
+        border-style: solid;     
+    }
+
+    &.label-has-ribbon-left {
+
+        .label-content {
+            padding-left: @label-ribbon-size;
+            border-radius: @base-border-radius @base-border-radius @base-border-radius 0; 
+        }
+
+        .label-ribbon {
+            left: -1px;
+            border-width: 0 @label-ribbon-size @label-ribbon-size 0;
+        }
+
+    }
+
+    &.label-has-ribbon-right {
+
+        .label-content {
+            padding-right: @label-ribbon-size;
+            border-radius: @base-border-radius @base-border-radius 0 @base-border-radius;
+        }
+
+        .label-ribbon {
+            right: -1px;
+            border-width: @label-ribbon-size @label-ribbon-size 0 0;
+        }
+
+    }
+    
+}

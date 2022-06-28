@@ -1,0 +1,20 @@
+@positions: left, right;
+
+each(@positions, {
+
+    .input-wrapper.icon-position-@{value} {
+
+        .icon {
+            @{value}: @form-element-padding;
+            position: absolute;
+            top: @form-element-padding;
+    
+            & + input {
+                padding-@{value}: @form-element-height;
+            }
+    
+        }
+    
+    }
+
+});

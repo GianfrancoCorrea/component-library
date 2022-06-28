@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Unit Test Component should render correctly 1`] = `
+<button
+  className="button
+        
+        
+        
+        
+        
+        size-normal
+        "
+  disabled={false}
+  onClick={null}
+  type="button"
+>
+  <span
+    className="button-content"
+  />
+</button>
+`;

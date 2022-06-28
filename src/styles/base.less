@@ -1,0 +1,249 @@
+/* Main */
+
+html,
+body {
+    color: @color-text-main;
+    font-size: @font-size-normal;    
+    line-height: @base-line-height;
+}
+
+html,
+body,
+textarea,
+select,
+input,
+button {
+    font-family: @base-font-family;
+}
+
+textarea,
+select,
+input,
+button {
+    outline: 0;
+}
+
+p {
+    margin: 0;
+}
+
+small {
+    font-size: 80%;
+}
+
+/* Forms */
+
+@form-element-height: 3rem;
+@form-element-padding: 1rem;
+@select-caret-wrapper-width: @form-element-height;
+@select-caret-size: .35rem;
+
+textarea,
+select,
+input {
+    font-size: @font-size-normal;
+}
+
+:not(output):-moz-ui-invalid,
+input:invalid {
+    box-shadow: none;
+}
+
+input:not([type='checkbox']):not([type='radio']):disabled,
+select:disabled,
+textarea:disabled { 
+    background: @form-elements-disabled-background;
+    opacity: .6;
+}
+
+.form-element-wrapper {
+
+    label {
+        position: relative;
+    }
+
+    &.is-required-field {
+        
+        .form-element-label::after {
+            content: " *";
+            color: @color-red;
+            font-weight: bold;
+        }
+    
+    }
+
+    &.has-error {
+
+        .form-element {
+            border-color: @form-elements-error-border-color;
+            background: @form-elements-error-background;
+            color: @color-red-darker;
+        }
+
+        .form-element-label {
+            color: @color-red-darker;
+        }
+
+    }
+
+    & + .form-element-wrapper {
+        margin-top: @space-normal;
+    }
+
+}
+
+.form-element-label-wrapper {
+    margin: 0 1px @space-xsmall 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form-element-label {
+    font-weight: bold;
+}
+
+.form-element-label-hint {
+    padding-left: @space-normal;
+    color: @color-text-secondary;
+    font-size: @font-size-small;
+}
+
+.form-element {
+    background: @form-elements-background;
+    color: @color-text-main;
+    border: 1px solid @form-elements-border-color;
+    padding: 0 @form-element-padding;
+    transition: all .2s;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: @form-elements-border-radius;
+    height: @form-element-height;
+    font-family: inherit;
+    appearance: none;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+
+    &:hover {
+        border-color: @form-elements-hover-border-color;
+    }
+
+    &:focus,
+    &:active {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .05);
+    }
+
+    select& {
+        padding-right: @select-caret-wrapper-width;
+    }
+
+    textarea& {
+        height: @form-element-height * 3;
+        padding-top: @form-element-padding;
+        padding-bottom: @form-element-padding;
+    }
+
+}
+
+.select-wrapper {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        right: (@select-caret-wrapper-width / 2) - (@select-caret-size / 2);
+        top: (@form-element-height / 2) - (@select-caret-size / 2);
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: @select-caret-size @select-caret-size 0 @select-caret-size;
+        border-color: @form-elements-border-color transparent transparent transparent;
+
+        .form-element-wrapper.has-error & {
+            border-color: @form-elements-error-border-color transparent transparent transparent;
+        }
+
+    }
+
+}
+
+.input-wrapper {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.required-form-element-asterisk {
+    color: @color-red;
+    font-weight: bold;
+}
+
+.form-element-error-message {
+    color: @color-red;
+    font-size: @font-size-small;
+}
+
+.form-element-error-message,
+.form-element-extra-content {
+    margin: @space-xsmall 1px 0 1px;
+}
+
+/* Helpers */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a,
+.text-link {
+    color: @color-link;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        color: darken(@color-link, 5%);
+    }
+
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-muted {
+    opacity: .4;
+}
+
+.text-accent {
+    color: @color-text-main;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
