@@ -14,7 +14,7 @@ const BackgroundDiv = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     position: relative;
     @media (min-width: 768px) {
         background-position: center;

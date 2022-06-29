@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {
     AvatarContainer,
@@ -10,16 +10,24 @@ import {
     MailIcon,
     VerticalDivider,
 } from '../styles';
+import useTypingText from '../helpers/useTypingText';
 
-const Avatar = ({ avatar, name, description }) => {
-    const [isHover, setIsHover] = useState(false);
-    const handleMouseEnter = () => setIsHover(true);
-    const handleMouseLeave = () => setIsHover(false);
+const Avatar = ({ avatar, name }) => {
+    const { word } = useTypingText(
+        [' web developer', ' crypto enthusiast'],
+        130,
+        15,
+    );
 
     return (
-        <AvatarContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <AvatarContainer>
             <img src={avatar} alt={name} />
             <Title>{name}</Title>
+            <Subtitle>
+                {'I\'m a'}
+                &nbsp;
+                {word}
+            </Subtitle>
             <IconsContainer>
                 <GithubIcon />
                 <VerticalDivider />
@@ -27,19 +35,16 @@ const Avatar = ({ avatar, name, description }) => {
                 <VerticalDivider />
                 <MailIcon />
             </IconsContainer>
-            {isHover && <Subtitle>{description}</Subtitle>}
         </AvatarContainer>
     );
 };
 Avatar.defaultProps = {
-    avatar      : 'https://avatars0.githubusercontent.com/u/17098281?s=460&v=4',
-    name        : 'John Doe',
-    description : 'I am a web developer',
+    avatar : 'https://avatars0.githubusercontent.com/u/17098281?s=460&v=4',
+    name   : 'John Doe',
 };
 Avatar.propTypes = {
-    avatar      : PropTypes.string,
-    name        : PropTypes.string,
-    description : PropTypes.string,
+    avatar : PropTypes.string,
+    name   : PropTypes.string,
 };
 
 export default Avatar;

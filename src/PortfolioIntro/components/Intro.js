@@ -3,6 +3,7 @@ import React from 'react';
 import Avatar from './Avatar';
 import styled from 'styled-components';
 import Background from './Background';
+import { MouseIcon } from '../styles';
 
 const HeroContainer = styled.div`
     position: relative;
@@ -20,11 +21,36 @@ const HeroContainer = styled.div`
         height: 100%;
     }
 `;
+const MouseIconContainer = styled.div`
+display: contents;
+width: 100%;
+height: 100%;
+text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+`;
+const MouseText = styled.span`
+font-family: 'Rubik', sans-serif;
+font-size: 1.2em;
+text-align: center;
+color: white;
+margin-bottom: 5px;
+`;
+
 function Intro(props) {
+    const gianImg = 'https://avatars.githubusercontent.com/u/46355516?v=4';
     return (
         <HeroContainer>
             <Background>
-                <Avatar {...props} />
+                <Avatar {...props} avatar={gianImg} name="Gianfranco Correa" />
+
+                <MouseIconContainer>
+                    <MouseText>
+                        Scroll down
+                    </MouseText>
+                    <MouseIcon />
+                </MouseIconContainer>
             </Background>
         </HeroContainer>
     );

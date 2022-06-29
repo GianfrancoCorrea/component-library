@@ -19,13 +19,15 @@ styles folder structure:
         └───global.less <--- main library less wich import styles.less from all components
 */
 
+@import (css) url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    src: local('Rubik Light'), local('Rubik-Light'), url('https://fonts.gstatic.com/s/rubik/v4/iJWHBXy1sz0wZ-ZWdOYnZQ.woff2') format('woff2');
+}
+.body {
+    font-family: 'Rubik', sans-serif;
 }
 
 @import (reference) "./variables.less";
@@ -54,3 +56,4 @@ styles folder structure:
 @import '../Textarea/styles.less';
 @import '../Title/styles.less';
 @import '../Toast/styles.less';
+@import '../PortfolioIntro/components/Avatar.less';
