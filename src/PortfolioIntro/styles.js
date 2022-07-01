@@ -142,14 +142,11 @@ const HeroContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fafafa;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
-    min-height: 700px;
-    @media (min-width: 768px) {
+    min-height: 100vh;
+    @media (max-width: 768px) {
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -177,14 +174,8 @@ color: white;
 margin-bottom: 5px;
 `;
 
-const CardContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-`;
 export {
     AvatarContainer, Title, Subtitle, IconsContainer, GithubIcon,
     LinkedinIcon, MailIcon, VerticalDivider, MouseIcon, ImgContainer,
-    HeroContainer, MouseIconContainer, MouseText, CardContainer,
+    HeroContainer, MouseIconContainer, MouseText,
 };
