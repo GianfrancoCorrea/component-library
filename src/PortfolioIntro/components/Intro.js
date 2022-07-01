@@ -43,7 +43,7 @@ const Wrapper = forwardRef(({ ref2 }, ref) => {
     );
 });
 
-function Intro() {
+function Intro({ contentOne }) {
     const ref = useRef();
     const ref2 = useRef();
 
@@ -61,7 +61,7 @@ function Intro() {
                     </MouseIconContainer>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0} speed={1} sticky={{ start: 0.3, end: 3 }} style={{ zIndex: 3 }} ref={ref2}>
+                <ParallaxLayer offset={0} speed={1} style={{ zIndex: 3 }} ref={ref2}>
                     <Wrapper ref={ref} ref2={ref2} />
                 </ParallaxLayer>
 
@@ -92,7 +92,8 @@ function Intro() {
                 >
                     <Title>Building to scale</Title>
                     <Divider />
-                    <img src="https://awv3node-homepage.surge.sh/build/assets/bash.svg" width={700} alt="bash" />
+                    {contentOne}
+                    {/* <img src="https://awv3node-homepage.surge.sh/build/assets/bash.svg" width={700} alt="bash" /> */}
                 </ParallaxLayer>
 
                 <ParallaxLayer
