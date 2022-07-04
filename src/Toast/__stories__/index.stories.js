@@ -3,9 +3,9 @@ import Toast from '../index';
 
 export default {
     title      : 'Toast',
-    component         : Toast,
-        parameters : {
-componentSubtitle : 'A Toast shows information in a fixed position.',
+    component  : Toast,
+    parameters : {
+        componentSubtitle: 'A Toast shows information in a fixed position.',
     },
 };
 
@@ -49,7 +49,7 @@ export const Position = () => (
         />
     </div>
 );
-Position.parameters =  { docs: { description: { story:  'A Toast can be placed in different areas.' } } };
+Position.parameters = { docs: { description: { story: 'A Toast can be placed in different areas.' } } };
 
 export const Types = () => (
     <div style={{ height: '200px', background: '#f4f4f4' }}>
@@ -84,4 +84,4 @@ export const Types = () => (
         />
     </div>
 );
-Types.parameters =  { docs: { description: { story:  'A Toast be rendered in different colors.' } } };
+Types.parameters = { docs: { description: { story: 'A Toast be rendered in different colors.' } } };
