@@ -8,7 +8,8 @@ const useImage = (fileName) => {
     useEffect(() => {
         const fetchImage = async () => {
             try {
-                const response = await import(`../../assets/images/${fileName}`);
+                const response = await import(`../../assets/images/${fileName}`); // local link
+                // const response = await import(`../../../assets/images/${fileName}`); // production 
                 setImage(response.default);
             } catch (err) {
                 setError(err);

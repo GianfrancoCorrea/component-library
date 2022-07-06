@@ -13,5 +13,5 @@ export { default as Modal } from 'src/Modal';
 export { default as Switch } from 'src/Switch';
 export { default as Title } from 'src/Title';
 export { default as Toast } from 'src/Toast';
-export { default as PortfolioIntro } from 'src/PortfolioIntro';
 export { default as PriceCard } from 'src/PriceCard';
+export { default as PortfolioIntro } from 'src/PortfolioIntro';

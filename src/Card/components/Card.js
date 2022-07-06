@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Title from 'src/Title';
-import bitcoinSVG from 'assets/images/bitcoin.svg';
 
 function Card(props) {
     const {

@@ -18,13 +18,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 100%;
-height: 100%;
+z-index: 100;
+min-width: 200px;
 max-width: 350px;
 max-height: 300px;
-background-color: #2F2F2F;
 border-radius: 5px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 padding: 20px;
 ${props => props.isSticky && `
     display: flex;
@@ -78,7 +76,6 @@ const IconsContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     max-width: 300px;
     height: 30px
     `;
@@ -145,6 +142,7 @@ const HeroContainer = styled.div`
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
+    /* background-color: #2F2F2F; */
     min-height: 100vh;
     @media (max-width: 768px) {
         flex-direction: row;

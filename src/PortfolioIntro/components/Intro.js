@@ -1,30 +1,28 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import Avatar from './Avatar';
+import IconsWrapper from './IconsWrapper';
 import {
     MouseIcon, HeroContainer, MouseIconContainer, MouseText,
 } from '../styles';
+import './styles.less';
 
+const CallToScroll = () => (
+    <MouseIconContainer>
+        <MouseText>
+            Scroll down
+        </MouseText>
+        <MouseIcon />
+    </MouseIconContainer>
+);
 function Intro() {
     const gianImg = 'https://avatars.githubusercontent.com/u/46355516?v=4';
 
     return (
         <HeroContainer>
-
-            {/* <Background /> */}
-            <MouseIconContainer>
-                <MouseText>
-                    Scroll down
-                </MouseText>
-                <MouseIcon />
-            </MouseIconContainer>
-
+            <IconsWrapper />
             <Avatar avatar={gianImg} name="Gianfranco Correa" />
-
-            {/*  <Title>Building to scale</Title>
-            <Divider />
-            <img src="https://awv3node-homepage.surge.sh/build/assets/bash.svg" width={700} alt="bash" /> */}
-
+            <CallToScroll />
         </HeroContainer>
     );
 }
