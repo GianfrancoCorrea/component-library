@@ -36,9 +36,9 @@ colors: respective color for each logo
 export default {
     tecnologies: [
         {
-            name  : 'React',
-            color : '#61dafb',
-            icon  : simpleIcons.ReactLogo,
+            name  : 'Node',
+            color : '#339933',
+            icon  : simpleIcons.Nodedotjs,
         },
         {
             name  : 'Next.js',
@@ -47,7 +47,7 @@ export default {
             icon  : simpleIcons.Nextdotjs,
         },
         {
-            name  : 'Redux',
+            name  : 'Redux.js',
             color : '#764abc',
             icon  : simpleIcons.Redux,
         },
@@ -68,9 +68,14 @@ export default {
             icon  : simpleIcons.Npm,
         },
         {
-            name  : 'Webpack',
-            color : '#8DD6F9',
-            icon  : simpleIcons.Webpack,
+            name  : 'React.js',
+            color : '#61dafb',
+            icon  : simpleIcons.ReactLogo,
+        },
+        {
+            name  : 'Rollup.js',
+            color : '#EC4A3F',
+            icon  : simpleIcons.Rollupdotjs,
         },
         {
             name  : 'Babel',
@@ -78,12 +83,12 @@ export default {
             icon  : simpleIcons.Babel,
         },
         {
-            name  : 'Node',
-            color : '#339933',
-            icon  : simpleIcons.Nodedotjs,
+            name  : 'Webpack',
+            color : '#8DD6F9',
+            icon  : simpleIcons.Webpack,
         },
         {
-            name  : 'Express',
+            name  : 'Express.js',
             color : '#000000',
             icon  : simpleIcons.Express,
         },
@@ -143,12 +148,12 @@ export default {
             color : '#A6A9AA',
             icon  : simpleIcons.Litecoin,
         },
-        {
+        /*  {
             name  : 'Monero',
             color : '#FF6600',
             icon  : simpleIcons.Monero,
-        },
-        {
+        }, */
+        /*         {
             name  : 'Ripple',
             color : '#0085C0',
             icon  : simpleIcons.Ripple,
@@ -157,6 +162,6 @@ export default {
             name  : 'Stellar',
             color : '#7D00FF',
             icon  : simpleIcons.Stellar,
-        },
+        }, */
     ],
 };

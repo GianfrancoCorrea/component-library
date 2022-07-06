@@ -16,7 +16,7 @@ import useTypingText from '../helpers/useTypingText';
 const Avatar = ({ avatar, name, isSticky }) => {
     const { word } = useTypingText(
         [' web developer', ' crypto enthusiast'],
-        130,
+        100,
         15,
     );
 
