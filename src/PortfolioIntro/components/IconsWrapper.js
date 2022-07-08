@@ -40,8 +40,8 @@ function IconsHandler() {
 
     return (
         <IconsBackground
-            onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
-            onMouseLeave={() => set({ xy: [0, 0] })}
+            onMouseMove={({ clientX: x, clientY: y }) => set.start({ xy: calc(x, y) })}
+            onMouseLeave={() => set.start({ xy: [0, 0] })}
             style={{
                 /*   background: '#2F2F2F', */
                 transform: props.xy.to((x, y) => trans1(x, y)),
@@ -57,6 +57,7 @@ function IconsHandler() {
                             top,
                             left,
                         }}
+                        key={item.name}
                         data-tip={item.name}
                         color={item.color}
                     >
@@ -73,6 +74,7 @@ function IconsHandler() {
                             top,
                             left,
                         }}
+                        key={item.name}
                         data-tip={item.name}
                         color={item.color}
                     >
@@ -89,6 +91,7 @@ function IconsHandler() {
                             top,
                             left,
                         }}
+                        key={item.name}
                         color={item.color}
                         data-tip={item.name}
                     >

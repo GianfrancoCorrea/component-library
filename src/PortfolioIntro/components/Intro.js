@@ -4,7 +4,7 @@ import Avatar from './Avatar';
 import IconsWrapper from './IconsWrapper';
 import {
     MouseIcon, HeroContainer, MouseIconContainer, MouseText,
-} from '../styles';
+} from '../../styles';
 import './styles.less';
 
 const CallToScroll = () => (
