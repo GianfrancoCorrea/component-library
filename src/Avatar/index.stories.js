@@ -11,13 +11,11 @@ export default {
 };
 
 export const Default = () => (
-    <div style={{ background: '', padding: '40px' }}>
-        <Avatar
-            name="john doe"
-            subject={'I\'m a'}
-            descriptions={['definition 1 ', 'definition 2']}
-            avatar="https://avatars0.githubusercontent.com/u/17098281?s=460&v=4"
-        />
-    </div>
+    <Avatar
+        name="john doe"
+        subject={'I\'m a'}
+        descriptions={['definition 1 ', 'definition 2']}
+        avatar="https://avatars0.githubusercontent.com/u/17098281?s=460&v=4"
+    />
 );
 

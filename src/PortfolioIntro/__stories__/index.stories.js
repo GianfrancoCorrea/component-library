@@ -11,8 +11,6 @@ export default {
 };
 
 export const Default = () => (
-    <div style={{ background: '#f4f4f4', padding: '40px' }}>
-        <Intro name="john doe" />
-    </div>
+    <Intro name="john doe" />
 );
 
