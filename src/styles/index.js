@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { Github, Linkedin, Mail } from '@styled-icons/feather';
+import { Github } from '@styled-icons/feather/Github';
+import { Linkedin } from '@styled-icons/feather/Linkedin';
+import { Mail } from '@styled-icons/feather/Mail';
 import { Mouse } from '@styled-icons/bootstrap/Mouse';
 
 const AvatarContainer = styled.div`

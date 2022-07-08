@@ -10,7 +10,7 @@ import {
     MailIcon,
     VerticalDivider,
     ImgContainer,
-} from '../styles';
+} from '../../styles';
 import useTypingText from '../helpers/useTypingText';
 
 const Avatar = ({ avatar, name, isSticky }) => {
