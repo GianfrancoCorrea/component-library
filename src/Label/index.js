@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'src/Icon';
 
 function Label(props) {
     const {
-        children, content, ribbonLeft, ribbonRight, icon, inverted, className,
+        children, content, ribbonLeft, ribbonRight, inverted, className,
     } = props;
 
     let { size, color } = props;
@@ -27,7 +26,6 @@ function Label(props) {
     return (
         <div className={labelClassNames}>
             <div className="label-content">
-                { icon && <Icon name={icon} size="small" /> }
                 { content || children }
                 { (ribbonLeft || ribbonRight) && <span className="label-ribbon" /> }
             </div>
@@ -40,7 +38,6 @@ Label.defaultProps = {
     content     : '',
     ribbonLeft  : false,
     ribbonRight : false,
-    icon        : '',
     inverted    : false,
     size        : 'normal',
     color       : 'green',
@@ -64,10 +61,6 @@ Label.propTypes = {
     Show Label as a right ribbon
     */
     ribbonRight : PropTypes.bool,
-    /**
-    Add an icon to the Label
-    */
-    icon        : PropTypes.string,
     /**
     Label lighter background
     */

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from 'src/Title';
+import Title from '../../styles';
 
 function Card(props) {
     const {
