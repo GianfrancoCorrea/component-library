@@ -1,8 +1,8 @@
 import React from 'react';
-import { useSpring, animated } from '@react-spring/web';
+import { useSpring } from '@react-spring/web';
 import iconList from '../helpers/iconList';
-import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
+import { IconDiv, IconsBackground } from './IconsWrapper.styles';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 500}%,${y / 500}%,0)`;
@@ -43,8 +43,8 @@ function IconsHandler() {
             onMouseMove={({ clientX: x, clientY: y }) => set.start({ xy: calc(x, y) })}
             onMouseLeave={() => set.start({ xy: [0, 0] })}
             style={{
-                /*   background: '#2F2F2F', */
-                transform: props.xy.to((x, y) => trans1(x, y)),
+                background : '#2F2F2F',
+                transform  : props.xy.to((x, y) => trans1(x, y)),
             }}
         >
             <ReactTooltip effect="solid" delayShow={250} />
@@ -104,32 +104,4 @@ function IconsHandler() {
 }
 
 export default IconsHandler;
-
-const IconsBackground = styled(animated.div)`
-position: absolute;
-width: 100%;
-height: 100%;
-`;
-
-const IconDiv = styled(animated.div)`
-position: absolute;
-opacity: 1;
-:hover {
-    opacity: 0.7;
-}
-transition: opacity 0.15s ease-in;
-svg {
-    width: 35px;
-    height: 35px;
-    color: #444b58;
-    transition: all 0.15s ease-in;
-    &:hover {
-        ${props => props.color && `
-            color: ${props.color};
-            transform: scale(1.1);
-        `}
-    }
-}   
-
-`;
 

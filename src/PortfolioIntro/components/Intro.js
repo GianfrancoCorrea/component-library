@@ -1,11 +1,10 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import Avatar from './Avatar';
+import Avatar from '../../Avatar';
 import IconsWrapper from './IconsWrapper';
 import {
     MouseIcon, HeroContainer, MouseIconContainer, MouseText,
 } from '../../styles';
-import './styles.less';
 
 const CallToScroll = () => (
     <MouseIconContainer>

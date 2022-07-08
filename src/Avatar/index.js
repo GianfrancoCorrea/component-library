@@ -10,12 +10,12 @@ import {
     MailIcon,
     VerticalDivider,
     ImgContainer,
-} from '../../styles';
+} from '../styles';
 import useTypingText from '../helpers/useTypingText';
 
-const Avatar = ({ avatar, name, isSticky }) => {
+const Avatar = ({ avatar, name, isSticky, subject, descriptions }) => {
     const { word } = useTypingText(
-        [' web developer', ' crypto enthusiast'],
+        descriptions,
         100,
         15,
     );
@@ -28,7 +28,7 @@ const Avatar = ({ avatar, name, isSticky }) => {
             </ImgContainer>
             {!isSticky && (
                 <Subtitle>
-                    {'I\'m a'}
+                    {subject}
                     &nbsp;
                     {word}
                 </Subtitle>
@@ -45,14 +45,21 @@ const Avatar = ({ avatar, name, isSticky }) => {
     );
 };
 Avatar.defaultProps = {
-    avatar   : 'https://avatars0.githubusercontent.com/u/17098281?s=460&v=4',
-    name     : 'John Doe',
-    isSticky : false,
+    avatar       : 'https://avatars0.githubusercontent.com/u/17098281?s=460&v=4',
+    name         : 'John Doe',
+    isSticky     : false,
+    subject      : 'I\'m a',
+    descriptions : [
+        'web developer',
+        'crypto enthusiast',
+    ],
 };
 Avatar.propTypes = {
-    avatar   : PropTypes.string,
-    name     : PropTypes.string,
-    isSticky : PropTypes.bool,
+    avatar       : PropTypes.string,
+    name         : PropTypes.string,
+    isSticky     : PropTypes.bool,
+    subject      : PropTypes.string,
+    descriptions : PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Avatar;

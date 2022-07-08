@@ -2,7 +2,7 @@ import React from 'react';
 import Toast from '../index';
 
 export default {
-    title      : 'Toast',
+    title      : 'styled/Toast',
     component  : Toast,
     parameters : {
         componentSubtitle: 'A Toast shows information in a fixed position.',

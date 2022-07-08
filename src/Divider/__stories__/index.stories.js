@@ -2,10 +2,10 @@ import React from 'react';
 import Divider from '../index';
 
 export default {
-    title      : 'Divider',
-    component         : Divider,
-        parameters : {
-componentSubtitle : 'A Divider visually segments content into groups.',
+    title      : 'styled/Divider',
+    component  : Divider,
+    parameters : {
+        componentSubtitle: 'A Divider visually segments content into groups.',
     },
 };
 
@@ -38,4 +38,4 @@ export const LargerMargins = () => (
         </div>
     </div>
 );
-LargerMargins.parameters =  { docs: { description: { story:  'A Dvider can have larger margins than default ones.' } } };
+LargerMargins.parameters = { docs: { description: { story: 'A Dvider can have larger margins than default ones.' } } };
