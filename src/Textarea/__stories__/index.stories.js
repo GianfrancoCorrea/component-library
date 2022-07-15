@@ -2,10 +2,10 @@ import React from 'react';
 import Textarea from '../index';
 
 export default {
-    title      : 'Textarea',
-    component         : Textarea,
-        parameters : {
-componentSubtitle : 'An Textarea is a field used to get a long answer from a user.',
+    title      : 'styled/Textarea',
+    component  : Textarea,
+    parameters : {
+        componentSubtitle: 'An Textarea is a field used to get a long answer from a user.',
     },
 };
 
@@ -35,7 +35,7 @@ export const UXHelpers = () => (
         </div>
     </div>
 );
-UXHelpers.parameters =  { docs: { description: { story:  'A Textarea can show relevant information for the user in a form of label hint, extra content or placeholder' } } };
+UXHelpers.parameters = { docs: { description: { story: 'A Textarea can show relevant information for the user in a form of label hint, extra content or placeholder' } } };
 
 export const LenghtLimits = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -56,7 +56,7 @@ export const LenghtLimits = () => (
         </div>
     </div>
 );
-LenghtLimits.parameters =  { docs: { description: { story:  'A Textarea can have a minimum or maximum amount of characters.' } } };
+LenghtLimits.parameters = { docs: { description: { story: 'A Textarea can have a minimum or maximum amount of characters.' } } };
 
 export const Required = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -68,7 +68,7 @@ export const Required = () => (
         </div>
     </div>
 );
-Required.parameters =  { docs: { description: { story:  'A Textarea can be required' } } };
+Required.parameters = { docs: { description: { story: 'A Textarea can be required' } } };
 
 export const ErrorStatus = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -82,7 +82,7 @@ export const ErrorStatus = () => (
         </div>
     </div>
 );
-ErrorStatus.parameters =  { docs: { description: { story:  'A Textarea can have an error status' } } };
+ErrorStatus.parameters = { docs: { description: { story: 'A Textarea can have an error status' } } };
 
 export const Disabled = () => (
     <div style={{ background: '#f4f4f4', padding: '40px' }}>
@@ -94,4 +94,4 @@ export const Disabled = () => (
         </div>
     </div>
 );
-Disabled.parameters =  { docs: { description: { story:  'A Textarea can have a disabled status' } } };
+Disabled.parameters = { docs: { description: { story: 'A Textarea can have a disabled status' } } };

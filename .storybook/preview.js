@@ -60,7 +60,7 @@ addons.setConfig({
      * id to select an addon panel
      * @type {String}
      */
-    selectedPanel: 'storybook/docs/panel',
+    /* selectedPanel: 'storybook/docs/panel', */
 
   });
 
@@ -79,5 +79,5 @@ export const parameters = {
         dark: themes.dark,
         light: themes.normal
     },
-    viewMode: 'docs',
+    /* viewMode: 'docs', */
 }

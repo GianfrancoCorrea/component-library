@@ -8,8 +8,8 @@ const useImage = (fileName) => {
     useEffect(() => {
         const fetchImage = async () => {
             try {
-                const response = await import(`../../assets/images/${fileName}`); // local link
-                // const response = await import(`../../../assets/images/${fileName}`); // production 
+                // const response = await import(`../../assets/images/${fileName}`); // local link
+                const response = await import(`../../../assets/images/${fileName}`); // storybook 
                 setImage(response.default);
             } catch (err) {
                 setError(err);
