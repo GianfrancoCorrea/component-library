@@ -6,7 +6,7 @@ import { Mail } from '@styled-icons/feather/Mail';
 const SectionContainer = styled.div`
 display: flex;
 justify-content: center;
-width: 100vw;
+width: 100%;
 position: relative;
 padding: 60px 0;
 animation: fadeIn 0.5s ease-in-out;
@@ -21,7 +21,7 @@ animation: fadeIn 0.5s ease-in-out;
 }
 `;
 const SectionWrapper = styled.div`
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
     padding: 0 20px;
@@ -34,7 +34,6 @@ const Welcome = styled.div`
 `;
 
 const Title = styled.div`
-
 margin-top: 40px;
  font-size: 90px;
 font-weight: 900;
@@ -44,6 +43,7 @@ line-height: .9;
 const IconsContainer = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 60px;
     svg {

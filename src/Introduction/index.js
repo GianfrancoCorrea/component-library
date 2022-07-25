@@ -11,6 +11,7 @@ import {
     MailIcon,
 } from '../styles';
 import useTypingText from '../helpers/useTypingText';
+import IconsHandler from '../PortfolioIntro/components/IconsWrapper';
 
 const Introduction = ({ name, descriptions }) => {
     const { word } = useTypingText(
@@ -21,6 +22,7 @@ const Introduction = ({ name, descriptions }) => {
 
     return (
         <SectionContainer>
+            <IconsHandler />
             <SectionWrapper>
                 <Welcome>Hello!</Welcome>
                 <Title>
