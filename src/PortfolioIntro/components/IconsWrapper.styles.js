@@ -17,13 +17,13 @@ transition: opacity 0.15s ease-in;
 svg {
     width: 35px;
     height: 35px;
-    color: #444b58;
+    color: rgba(0, 0, 0, .3);
     transition: all 0.15s ease-in;
     &:hover {
         ${props => props.color && `
             color: ${props.color};
-            transform: scale(1.1);
+            transform: scale(1.2);
         `}
     }
-}   
+}
 `;

@@ -13,9 +13,7 @@ export default {
 export const IconsContainer = () => (
     <Styled.IconsContainer>
         <Styled.GithubIcon />
-        <Styled.VerticalDivider />
         <Styled.LinkedinIcon />
-        <Styled.VerticalDivider />
         <Styled.MailIcon />
     </Styled.IconsContainer>
 );

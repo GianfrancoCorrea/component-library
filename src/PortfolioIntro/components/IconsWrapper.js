@@ -43,8 +43,7 @@ function IconsHandler() {
             onMouseMove={({ clientX: x, clientY: y }) => set.start({ xy: calc(x, y) })}
             onMouseLeave={() => set.start({ xy: [0, 0] })}
             style={{
-                background : '#2F2F2F',
-                transform  : props.xy.to((x, y) => trans1(x, y)),
+                transform: props.xy.to((x, y) => trans1(x, y)),
             }}
         >
             <ReactTooltip effect="solid" delayShow={250} />

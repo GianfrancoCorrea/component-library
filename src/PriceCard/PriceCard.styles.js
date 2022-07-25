@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 const CardDiv = styled.div`
-background: #2f2f2f!important;
 border-radius: 5px;
 padding: 2em;
 margin: 1em;
-color: #fff;
 display: flex;
 flex-direction: column;
 justify-content: center;
