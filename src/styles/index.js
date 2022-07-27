@@ -3,35 +3,6 @@ import { Github } from '@styled-icons/feather/Github';
 import { Linkedin } from '@styled-icons/feather/Linkedin';
 import { Mail } from '@styled-icons/feather/Mail';
 
-const SectionContainer = styled.div`
-display: flex;
-justify-content: center;
-width: 100%;
-position: relative;
-padding: 60px 0;
-animation: fadeIn 0.5s ease-in-out;
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-`;
-const SectionWrapper = styled.div`
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    padding: 0 20px;
-    text-align: left;
-`;
-
-const PortfolioIntroWrapper = styled.div`
-    overflow: hidden;
-`;
-
 const Welcome = styled.div`
     font-weight: 500;
     font-size: 30px;
@@ -77,6 +48,6 @@ color: #38FF58;
 `;
 
 export {
-    SectionContainer, SectionWrapper, Welcome, Title, IconsContainer, GithubIcon,
-    LinkedinIcon, MailIcon, PortfolioIntroWrapper,
+    Welcome, Title, IconsContainer, GithubIcon,
+    LinkedinIcon, MailIcon,
 };

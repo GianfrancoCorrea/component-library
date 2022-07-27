@@ -5,3 +5,5 @@ export { default as LoadingSpinner } from 'src/LoadingSpinner';
 export { default as Toast } from 'src/Toast';
 export { default as PriceCard } from 'src/PriceCard';
 export { default as PortfolioIntro } from 'src/PortfolioIntro';
+export { default as Introduction } from 'src/Introduction';
+export { default as IconsBackground } from 'src/IconsBackground';
