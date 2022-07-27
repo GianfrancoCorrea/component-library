@@ -9,6 +9,7 @@ import {
     GithubIcon,
     LinkedinIcon,
     MailIcon,
+    PortfolioIntroWrapper,
 } from '../styles';
 import useTypingText from '../helpers/useTypingText';
 import IconsHandler from '../PortfolioIntro/components/IconsWrapper';
@@ -21,23 +22,25 @@ const Introduction = ({ name, descriptions }) => {
     );
 
     return (
-        <SectionContainer>
-            <IconsHandler />
-            <SectionWrapper>
-                <Welcome>Hello!</Welcome>
-                <Title>
-                    {`I'm ${name},`}
-                    <br />
-                    {'a '}
-                    {word}
-                </Title>
-                <IconsContainer>
-                    <GithubIcon />
-                    <LinkedinIcon />
-                    <MailIcon />
-                </IconsContainer>
-            </SectionWrapper>
-        </SectionContainer>
+        <PortfolioIntroWrapper className="PortfolioIntroWrapper">
+            <SectionContainer className="SectionContaine">
+                <IconsHandler />
+                <SectionWrapper className="SectionWrapper">
+                    <Welcome>Hello!</Welcome>
+                    <Title>
+                        {`I'm ${name},`}
+                        <br />
+                        {'a '}
+                        {word}
+                    </Title>
+                    <IconsContainer>
+                        <GithubIcon />
+                        <LinkedinIcon />
+                        <MailIcon />
+                    </IconsContainer>
+                </SectionWrapper>
+            </SectionContainer>
+        </PortfolioIntroWrapper>
     );
 };
 Introduction.defaultProps = {

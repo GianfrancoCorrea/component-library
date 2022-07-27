@@ -28,6 +28,10 @@ const SectionWrapper = styled.div`
     text-align: left;
 `;
 
+const PortfolioIntroWrapper = styled.div`
+    overflow: hidden;
+`;
+
 const Welcome = styled.div`
     font-weight: 500;
     font-size: 30px;
@@ -74,5 +78,5 @@ color: #38FF58;
 
 export {
     SectionContainer, SectionWrapper, Welcome, Title, IconsContainer, GithubIcon,
-    LinkedinIcon, MailIcon,
+    LinkedinIcon, MailIcon, PortfolioIntroWrapper,
 };
