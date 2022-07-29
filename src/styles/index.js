@@ -47,6 +47,30 @@ const Text = styled.p`
 
 `;
 
+// Button
+
+const Button = styled.button`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: ${variables.spaceNormal} ${variables.spaceLarge};
+    background: #38FF58;
+    color: #222222;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3), 0 8px 16px rgba(0, 0, 0, .2);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .2), 0 8px 20px rgba(0, 0, 0, .4);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+`;
+
 const IconsContainer = styled.div`
     display: flex;
     align-items: center;
@@ -82,6 +106,7 @@ color: #38FF58;
 export {
     Heading, HeadingMedium, HeadingLarge, HeadingXLarge, HeadingHuge, HeadingHero,
     Text,
+    Button,
     IconsContainer, GithubIcon,
     LinkedinIcon, MailIcon,
 };
