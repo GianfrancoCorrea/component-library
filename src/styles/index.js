@@ -68,7 +68,23 @@ const Button = styled.button`
         transition: all .2s ease-in-out;
         cursor: pointer;
     }
+`;
 
+// Form
+
+const Input = styled.input`
+    padding: ${variables.spaceNormal};
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+`;
+
+const TextArea = styled.textarea`
+    padding: ${variables.spaceNormal};
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    height: 100px;
 `;
 
 const IconsContainer = styled.div`
@@ -107,6 +123,7 @@ export {
     Heading, HeadingMedium, HeadingLarge, HeadingXLarge, HeadingHuge, HeadingHero,
     Text,
     Button,
+    Input, TextArea,
     IconsContainer, GithubIcon,
     LinkedinIcon, MailIcon,
 };
