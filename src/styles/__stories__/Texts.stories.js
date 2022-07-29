@@ -11,12 +11,12 @@ export default {
 };
 
 export const Title = () => (
-    <Styled.Title>title text</Styled.Title>
+    <Styled.Heading>title text</Styled.Heading>
 );
 
 export const WithSubtitle = () => (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <Styled.Title>title text</Styled.Title>
+        <Styled.Heading>title text</Styled.Heading>
         <Styled.Subtitle>Subtitle text</Styled.Subtitle>
     </div>
 );

@@ -3,7 +3,7 @@ import * as Styled from '../index';
 
 export default {
     title      : 'Styled/Icons',
-    component  : Styled.Title,
+    component  : Styled.Heading,
     viewMode   : 'Canvas',
     parameters : {
         componentSubtitle: 'Styled-components Icons',

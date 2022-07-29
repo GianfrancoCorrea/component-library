@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Title } from '../../styles';
+import { HeadingMedium } from '../../styles';
 
 function Card(props) {
     const {
@@ -8,8 +8,8 @@ function Card(props) {
         titleAction, largePadding, noPadding,
     } = props;
 
-    const cardClassName = `card 
-        ${transparent ? ' transparent' : ''} 
+    const cardClassName = `card
+        ${transparent ? ' transparent' : ''}
         ${largePadding ? 'with-large-padding' : ''}
         ${noPadding ? 'without-padding' : ''}
         ${className}
@@ -19,7 +19,7 @@ function Card(props) {
         <div className={cardClassName}>
             { title && (
                 <div className="card-header">
-                    <Title size="large" content={title} />
+                    <HeadingMedium content={title} />
                     {titleAction && (
                         <div className="card-title-action">
                             {titleAction}

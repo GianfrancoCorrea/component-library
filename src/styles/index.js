@@ -1,19 +1,51 @@
 import styled from 'styled-components';
+import * as variables from './variables';
 import { Github } from '@styled-icons/feather/Github';
 import { Linkedin } from '@styled-icons/feather/Linkedin';
 import { Mail } from '@styled-icons/feather/Mail';
 
-const Welcome = styled.div`
-    font-weight: 500;
-    font-size: 30px;
+// Heading
+
+const Heading = styled.div`
+    font-size: ${variables.fontSizeNormal};
+    line-height: 1;
+    font-weight: 900;
 `;
 
-const Title = styled.div`
-margin-top: 40px;
- font-size: 90px;
-font-weight: 900;
-line-height: .9;
- `;
+const HeadingMedium = styled(Heading)`
+    font-size: ${variables.fontSizeMedium};
+`;
+
+const HeadingLarge = styled(Heading)`
+    font-size: ${variables.fontSizeLarge};
+`;
+
+const HeadingXLarge = styled(Heading)`
+    font-size: ${variables.fontSizeXLarge};
+`;
+
+const HeadingHuge = styled(Heading)`
+    font-size: ${variables.fontSizeHuge};
+`;
+
+const HeadingHero = styled(Heading)`
+    font-size: ${variables.fontSizeHero};
+    line-height: .9;
+`;
+
+// Text
+
+const Text = styled.p`
+    font-size: ${variables.fontSizeNormal};
+    line-height: 1.4;
+    margin: 0;
+
+    & + &,
+    ${Heading} + & {
+        margin-top: ${variables.spaceNormal};
+    };
+
+`;
 
 const IconsContainer = styled.div`
     display: flex;
@@ -48,6 +80,8 @@ color: #38FF58;
 `;
 
 export {
-    Welcome, Title, IconsContainer, GithubIcon,
+    Heading, HeadingMedium, HeadingLarge, HeadingXLarge, HeadingHuge, HeadingHero,
+    Text,
+    IconsContainer, GithubIcon,
     LinkedinIcon, MailIcon,
 };

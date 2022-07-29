@@ -1,14 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import {
-    Welcome,
-    Title,
+    HeadingHero,
+    HeadingMedium,
     IconsContainer,
     GithubIcon,
     LinkedinIcon,
     MailIcon,
 } from '../styles';
 import useTypingText from '../helpers/useTypingText';
+
+const StyledHeadingMedium = styled(HeadingMedium)`
+    font-weight: normal;
+    margin-bottom: 20px;
+`;
 
 const Introduction = ({ name, descriptions }) => {
     const { output } = useTypingText(
@@ -19,13 +25,13 @@ const Introduction = ({ name, descriptions }) => {
 
     return (
         <>
-            <Welcome>Hello!</Welcome>
-            <Title>
+            <StyledHeadingMedium>Hello!</StyledHeadingMedium>
+            <HeadingHero>
                 {`I'm ${name},`}
                 <br />
                 {'a '}
                 {output}
-            </Title>
+            </HeadingHero>
             <IconsContainer>
                 <GithubIcon />
                 <LinkedinIcon />
