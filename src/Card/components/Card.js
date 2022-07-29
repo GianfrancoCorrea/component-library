@@ -1,81 +1,49 @@
 import React from 'react';
+import styled from 'styled-components';
+import { spaceNormal } from '../../styles/variables';
 import PropTypes from 'prop-types';
 import { HeadingMedium } from '../../styles';
 
+const StyledCard = styled.div`
+    border-radius: 4px;
+    padding: ${spaceNormal};
+    background: #ffffff;
+`;
+
 function Card(props) {
     const {
-        children, content, transparent, title, className,
-        titleAction, largePadding, noPadding,
+        children, title, className,
     } = props;
 
-    const cardClassName = `card
-        ${transparent ? ' transparent' : ''}
-        ${largePadding ? 'with-large-padding' : ''}
-        ${noPadding ? 'without-padding' : ''}
-        ${className}
-    `;
-
     return (
-        <div className={cardClassName}>
+        <StyledCard className={className}>
             { title && (
-                <div className="card-header">
-                    <HeadingMedium content={title} />
-                    {titleAction && (
-                        <div className="card-title-action">
-                            {titleAction}
-                        </div>
-                    )}
-                </div>
+                <HeadingMedium content={title} />
             )}
-            { content || children }
-        </div>
+            { children }
+        </StyledCard>
     );
 }
 
 Card.defaultProps = {
-    children     : '',
-    content      : '',
-    transparent  : false,
-    title        : '',
-    className    : '',
-    titleAction  : '',
-    largePadding : false,
-    noPadding    : false,
+    children  : '',
+    title     : '',
+    className : '',
 };
 
 Card.propTypes = {
     /**
     Card content
     */
-    children     : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
-    /**
-    Card content
-    */
-    content      : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
-    /**
-    Card without background
-    */
-    transparent  : PropTypes.bool,
+    children  : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
     /**
     Card title
     */
-    title        : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
+    title     : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
     /**
     Custom className
     */
-    className    : PropTypes.string,
-    /**
-    Card title side element
-    */
-    titleAction  : PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
-    /**
-    Card larger padding
-    */
-    largePadding : PropTypes.bool,
-    /**
-    Card without padding
-    */
-    noPadding    : PropTypes.bool,
+    className : PropTypes.string,
 };
 
 export default Card;
