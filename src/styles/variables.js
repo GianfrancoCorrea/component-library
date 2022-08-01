@@ -5,8 +5,8 @@ const spaceMedium = '30px';
 const spaceLarge = '40px';
 
 // Fonts sizes
-const fontSizeNormal = '16px';
-const fontSizeMedium = '22px';
+const fontSizeNormal = '14px';
+const fontSizeMedium = '18px';
 const fontSizeLarge = '32px';
 const fontSizeXLarge = '45px';
 const fontSizeHuge = '64px';

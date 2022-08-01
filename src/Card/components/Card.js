@@ -1,14 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { spaceNormal } from '../../styles/variables';
 import PropTypes from 'prop-types';
-import { HeadingMedium } from '../../styles';
-
-const StyledCard = styled.div`
-    border-radius: 4px;
-    padding: ${spaceNormal};
-    background: #ffffff;
-`;
+import { HeadingMedium, Card as StyledCard } from '../../styles';
 
 function Card(props) {
     const {

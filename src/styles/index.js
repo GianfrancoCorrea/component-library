@@ -56,8 +56,9 @@ const Button = styled.button`
     padding: ${variables.spaceNormal} ${variables.spaceLarge};
     background: #38FF58;
     color: #222222;
+    font-size: ${variables.fontSizeMedium};
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 4px;
     border: 0;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .3), 0 8px 16px rgba(0, 0, 0, .2);
@@ -85,6 +86,15 @@ const TextArea = styled.textarea`
     border-radius: 4px;
     transition: all .2s ease-in-out;
     height: 100px;
+`;
+
+// Card
+
+const Card = styled.div`
+    border-radius: 4px;
+    padding: ${variables.spaceNormal};
+    background: rgba(255, 255, 255, .075);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .25);
 `;
 
 const IconsContainer = styled.div`
@@ -124,6 +134,6 @@ export {
     Text,
     Button,
     Input, TextArea,
-    IconsContainer, GithubIcon,
-    LinkedinIcon, MailIcon,
+    Card,
+    IconsContainer, GithubIcon, LinkedinIcon, MailIcon,
 };
