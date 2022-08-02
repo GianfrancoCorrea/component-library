@@ -36,8 +36,10 @@ const HeadingHero = styled(Heading)`
 // Text
 
 const Text = styled.p`
+    font-family: 'Space Mono', monospace;
     font-size: ${variables.fontSizeNormal};
-    line-height: 1.4;
+    word-spacing: -3px;
+    line-height: 1.3;
     margin: 0;
 
     & + &,
@@ -78,6 +80,8 @@ const Input = styled.input`
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 4px;
     transition: all .2s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
 `;
 
 const TextArea = styled.textarea`
@@ -86,6 +90,8 @@ const TextArea = styled.textarea`
     border-radius: 4px;
     transition: all .2s ease-in-out;
     height: 100px;
+    width: 100%;
+    box-sizing: border-box;
 `;
 
 // Card
@@ -95,6 +101,35 @@ const Card = styled.div`
     padding: ${variables.spaceNormal};
     background: rgba(255, 255, 255, .075);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .25);
+`;
+
+// Table
+
+const TableHead = styled.th`
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+`;
+
+const TableCell = styled.td`
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+`;
+
+const Table = styled.table`
+    border-spacing: 0;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+
+    ${TableHead},
+    ${TableCell} {
+        padding: 4px 15px;
+    }
 `;
 
 const IconsContainer = styled.div`
@@ -135,5 +170,6 @@ export {
     Button,
     Input, TextArea,
     Card,
+    Table, TableHead, TableCell,
     IconsContainer, GithubIcon, LinkedinIcon, MailIcon,
 };
